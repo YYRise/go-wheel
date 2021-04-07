@@ -1,2 +1,6 @@
-# Astar
-golang实现障碍、转弯最少的A*寻路
+# go-wheel
+
+## A星寻路 Astar
+- 障碍、转弯最少优先的A*寻路
+
+
