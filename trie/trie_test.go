@@ -21,3 +21,4 @@ func TestInitTrie(t *testing.T) {
 		fmt.Println(c)
 	}
 }
+
