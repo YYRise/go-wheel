@@ -15,3 +15,9 @@
 - 最大子序和 maxSumSubArray
 - 最长上升子序列 lengthOfLIS
 - 三角形最小路径和 miniSumTriangle
+
+## atomic-value
+atomic.Value使用时的并发问题
+
+## pprof-demo
+pprof的测试使用
