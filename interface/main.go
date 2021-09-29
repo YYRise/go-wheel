@@ -16,11 +16,9 @@ func (s *Student) String() string {
 }
 
 /*
-编译报错
-.\main.go:18:6: method redeclared: Student.String
-	method(*Student) func() string
-	method(Student) func() string
-
+// 如果实现了接收者是值类型的方法，会隐含地也实现了接收者是指针类型的方法。
+// fmt.Println(s)  // [Name: name], [Age: 18]
+// fmt.Println(&s) // [Name: name], [Age: 18]
 func (s Student) String() string {
 	return fmt.Sprintf("[Name: %s], [Age: %d]", s.Name, s.Age)
 }
