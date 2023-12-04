@@ -1,0 +1,96 @@
+panic: 监听端口报错:listen tcp :8011: bind: address already in use
+
+goroutine 1 [running]:
+main.(*serverManager).initListener(0x1332320)
+	/Users/sheng/Study/github/go-project/go-wheel/grace-fasthttp/server.go:64 +0x179
+main.(*serverManager).serv(0x1332320, {0x11be061, 0x4})
+	/Users/sheng/Study/github/go-project/go-wheel/grace-fasthttp/server.go:38 +0x53
+main.main()
+	/Users/sheng/Study/github/go-project/go-wheel/grace-fasthttp/main.go:4 +0x2c
+listening on 端口: 8011
+13532 Received SIGHUP. forking.
+pros: os.Process{Pid:13669, handle:0x0, isdone:atomic.Bool{_:atomic.noCopy{}, v:0x0}, sigMu:sync.RWMutex{w:sync.Mutex{state:0, sema:0x0}, writerSem:0x0, readerSem:0x0, readerCount:atomic.Int32{_:atomic.noCopy{}, v:0}, readerWait:atomic.Int32{_:atomic.noCopy{}, v:0}}}
+
+graceful restart
+closeOldPid 发送信号: 13532 terminated
+listening on 端口: 8011
+13532 Received SIGTERM. 开始关闭
+13669 Received SIGHUP. forking.
+pros: os.Process{Pid:13788, handle:0x0, isdone:atomic.Bool{_:atomic.noCopy{}, v:0x0}, sigMu:sync.RWMutex{w:sync.Mutex{state:0, sema:0x0}, writerSem:0x0, readerSem:0x0, readerCount:atomic.Int32{_:atomic.noCopy{}, v:0}, readerWait:atomic.Int32{_:atomic.noCopy{}, v:0}}}
+
+graceful restart
+closeOldPid 发送信号: 13669 terminated
+listening on 端口: 8011
+13669 Received SIGTERM. 开始关闭
+13788 Received SIGHUP. forking.
+pros: os.Process{Pid:13945, handle:0x0, isdone:atomic.Bool{_:atomic.noCopy{}, v:0x0}, sigMu:sync.RWMutex{w:sync.Mutex{state:0, sema:0x0}, writerSem:0x0, readerSem:0x0, readerCount:atomic.Int32{_:atomic.noCopy{}, v:0}, readerWait:atomic.Int32{_:atomic.noCopy{}, v:0}}}
+
+graceful restart
+closeOldPid 发送信号: 13788 terminated
+listening on 端口: 8011
+13788 Received SIGTERM. 开始关闭
+13945 Received SIGHUP. forking.
+pros: os.Process{Pid:14114, handle:0x0, isdone:atomic.Bool{_:atomic.noCopy{}, v:0x0}, sigMu:sync.RWMutex{w:sync.Mutex{state:0, sema:0x0}, writerSem:0x0, readerSem:0x0, readerCount:atomic.Int32{_:atomic.noCopy{}, v:0}, readerWait:atomic.Int32{_:atomic.noCopy{}, v:0}}}
+
+serv start……
+graceful restart
+closeOldPid 发送信号: 13945 terminated
+listening on 端口: 8011
+13945 Received SIGTERM. 开始关闭
+14114 Received SIGHUP. forking.
+arg: /Users/sheng/Study/github/go-project/go-wheel/grace-fasthttp/sh/grace-fasthttp-bin
+pros: os.Process{Pid:14190, handle:0x0, isdone:atomic.Bool{_:atomic.noCopy{}, v:0x0}, sigMu:sync.RWMutex{w:sync.Mutex{state:0, sema:0x0}, writerSem:0x0, readerSem:0x0, readerCount:atomic.Int32{_:atomic.noCopy{}, v:0}, readerWait:atomic.Int32{_:atomic.noCopy{}, v:0}}}
+
+main start……
+serv start……
+graceful restart
+closeOldPid 发送信号: 14114 terminated
+listening on 端口: 8011
+14114 Received SIGTERM. 开始关闭
+14190 Received SIGHUP. forking.
+arg: /Users/sheng/Study/github/go-project/go-wheel/grace-fasthttp/sh/grace-fasthttp-bin
+pros: os.Process{Pid:14282, handle:0x0, isdone:atomic.Bool{_:atomic.noCopy{}, v:0x0}, sigMu:sync.RWMutex{w:sync.Mutex{state:0, sema:0x0}, writerSem:0x0, readerSem:0x0, readerCount:atomic.Int32{_:atomic.noCopy{}, v:0}, readerWait:atomic.Int32{_:atomic.noCopy{}, v:0}}}
+
+main start……
+serv start……
+graceful restart
+initListener:file= &{0xc0000601e0}
+closeOldPid 发送信号: 14190 terminated
+listening on 端口: 8011
+14190 Received SIGTERM. 开始关闭
+14282 Received SIGHUP. forking.
+arg: /Users/sheng/Study/github/go-project/go-wheel/grace-fasthttp/sh/grace-fasthttp-bin
+pros: os.Process{Pid:14402, handle:0x0, isdone:atomic.Bool{_:atomic.noCopy{}, v:0x0}, sigMu:sync.RWMutex{w:sync.Mutex{state:0, sema:0x0}, writerSem:0x0, readerSem:0x0, readerCount:atomic.Int32{_:atomic.noCopy{}, v:0}, readerWait:atomic.Int32{_:atomic.noCopy{}, v:0}}}
+
+main start……
+serv start……
+init: start /Users/sheng/Study/github/go-project/go-wheel/grace-fasthttp/sh/grace-fasthttp-bin
+init: start GRACEFUL
+initListener:file= &{0xc0000a8180}
+closeOldPid 发送信号: 14282 terminated
+listening on 端口: 8011
+14282 Received SIGTERM. 开始关闭
+14402 Received SIGHUP. forking.
+arg: /Users/sheng/Study/github/go-project/go-wheel/grace-fasthttp/sh/grace-fasthttp-bin
+pros: os.Process{Pid:14841, handle:0x0, isdone:atomic.Bool{_:atomic.noCopy{}, v:0x0}, sigMu:sync.RWMutex{w:sync.Mutex{state:0, sema:0x0}, writerSem:0x0, readerSem:0x0, readerCount:atomic.Int32{_:atomic.noCopy{}, v:0}, readerWait:atomic.Int32{_:atomic.noCopy{}, v:0}}}
+
+main start……
+serv start……
+init: start /Users/sheng/Study/github/go-project/go-wheel/grace-fasthttp/sh/grace-fasthttp-bin
+init: start GRACEFUL
+initListener:file= &{0xc0000aa180}
+closeOldPid 发送信号: 14402 terminated
+listening on 端口: 8011
+14402 Received SIGTERM. 开始关闭
+14841 Received SIGHUP. forking.
+arg: /Users/sheng/Study/github/go-project/go-wheel/grace-fasthttp/sh/grace-fasthttp-bin
+pros: os.Process{Pid:15829, handle:0x0, isdone:atomic.Bool{_:atomic.noCopy{}, v:0x0}, sigMu:sync.RWMutex{w:sync.Mutex{state:0, sema:0x0}, writerSem:0x0, readerSem:0x0, readerCount:atomic.Int32{_:atomic.noCopy{}, v:0}, readerWait:atomic.Int32{_:atomic.noCopy{}, v:0}}}
+
+main start……
+serv start……
+init: start /Users/sheng/Study/github/go-project/go-wheel/grace-fasthttp/sh/grace-fasthttp-bin
+init: start GRACEFUL
+initListener:file= &{0xc0000b2180}
+closeOldPid 发送信号: 14841 terminated
+listening on 端口: 8011
+14841 Received SIGTERM. 开始关闭
