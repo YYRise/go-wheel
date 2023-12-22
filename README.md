@@ -24,3 +24,6 @@ pprof的测试使用
 
 ## grace-fasthttp
 fasthttp服务平滑重启
+
+## sqlite2mongo
+python脚本：sqlite数据迁移到mongo
